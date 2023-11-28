@@ -17,9 +17,9 @@ jobs:
 
       - name: Update README
         run: |
-          echo "Update time - $(date +"%Y-%m-%d")" >> refresh.txt
+          echo "Update time - $(date +"%Y-%m-%d %H:%M:%S")" >> refresh.txt
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m "Auto Refresh Push - $(date +"%Y-%m-%d")"
+          git commit -m "Auto Refresh Push - $(date +"%Y-%m-%d %H:%M:%S")"
           git push
