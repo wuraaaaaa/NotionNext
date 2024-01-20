@@ -25,6 +25,7 @@ const MyApp = ({ Component, pageProps }) => {
     // 静态导入本地自定义样式
     loadExternalResource('/css/custom.css', 'css')
     loadExternalResource('/js/custom.js', 'js')
+    loadExternalResource('/file/jd_root.txt', 'other')
 
     // 自动添加图片阴影
     if (BLOG.IMG_SHADOW) {
